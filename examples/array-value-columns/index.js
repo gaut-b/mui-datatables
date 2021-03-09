@@ -4,6 +4,7 @@ import MUIDataTable from "../../src";
 import Chip from '@material-ui/core/Chip';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
+import { TrendingUp } from "@material-ui/icons";
 
 function Example() {
   // const allTags = ['leave-message', 'frequently-busy', 'nice', 'grumpy', 'in-person', 'preferred', 'second-choice'];
@@ -15,6 +16,7 @@ function Example() {
       options: {
         filter: true,
         display: 'excluded',
+        draggable: true,
       }
     },
     {
@@ -22,6 +24,7 @@ function Example() {
       name: "Title",
       options: {
         filter: true,
+        draggable: true,
       }
     },
     {
@@ -99,6 +102,9 @@ function Example() {
     filterArrayFullMatch: filterArrayFullMatch,
     filterType: 'dropdown',
     responsive: 'standard',
+    draggableColumns: {
+      enabled: true,
+    }
   };
 
   return (

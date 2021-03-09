@@ -25,6 +25,7 @@ const useStyles = makeStyles(
     mypopper: {
       '&[data-x-out-of-boundaries]': {
         display: 'none',
+        backroundColor: 'red'
       },
     },
     data: {
